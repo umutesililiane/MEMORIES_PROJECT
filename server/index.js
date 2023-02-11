@@ -11,7 +11,7 @@ app.use(cors());
 app.use(bodyparser.json({limit:"30mb",extended:true}));
 app.use(bodyparser.urlencoded({limit:"30mb",extended:true}));
 app.use('/posts',postRoutes);
-app.use('posts',postRoutes);
+// app.use('posts',postRoutes);
 
 const CONNECTION_URL ='mongodb+srv://mydatabase:mydatabase123@cluster0.qvxqe3n.mongodb.net/?retryWrites=true&w=majority';
 const PORT = process.env.PORT || 5000;
